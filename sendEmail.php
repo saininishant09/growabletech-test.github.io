@@ -16,15 +16,15 @@ if(isset($_POST['name']) && isset($_POST['email'])){
     $mail->isSMTP();
     $mail->Host = "smtp.gmail.com";
     $mail->SMTPAuth = true;
-    $mail->Username = "example@gmail.com";
-    $mail->Password = '';
+    $mail->Username = "growabletech@gmail.com";
+    $mail->Password = 'xbjxpmredtxluyjb';
     $mail->Port = 465;
     $mail->SMTPSecure = "ssl";
 
     //email settings
     $mail->isHTML(true);
     $mail->setFrom($email, $name);
-    $mail->addAddress("example@gmail.com");
+    $mail->addAddress("growabletech@gmail.com");
     $mail->Subject = ("query");
     $mail->Body = $body;
 
